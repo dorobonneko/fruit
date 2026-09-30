@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="8dp">
+
+	<ImageView
+		android:id="@+id/tvCover"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:scaleType="centerCrop"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintDimensionRatio="5:7"
+		tools:src="@tools:sample/backgrounds/scenic"/>
+
+	<TextView
+		android:id="@+id/tvHot"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:paddingStart="6dp"
+		android:paddingEnd="6dp"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		android:text="🔥 1234"
+		android:textSize="8sp"
+		android:textColor="#ffffff"
+		android:textStyle="bold"
+		app:layout_constraintTop_toTopOf="@id/tvCover"
+		app:layout_constraintEnd_toEndOf="@id/tvCover"
+		android:shadowColor="#000000"
+		android:shadowRadius="1.0"/>
+
+	<TextView
+		android:id="@+id/tvEpisode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:paddingStart="8dp"
+		android:paddingEnd="8dp"
+		android:paddingTop="3dp"
+		android:paddingBottom="3dp"
+		android:text="共 12 集"
+		android:textSize="10sp"
+		android:textColor="#ffffff"
+		app:layout_constraintBottom_toBottomOf="@id/tvCover"
+		app:layout_constraintStart_toStartOf="@id/tvCover"
+		android:shadowColor="#000000"
+		android:shadowRadius="1.0"/>
+
+	<TextView
+		android:id="@+id/tvTitle"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="6dp"
+		android:text="这是一段非常长的视频标题示例，超出部分会被省略"
+		android:textSize="14sp"
+		android:textColor="?android:attr/textColorPrimary"
+		android:ellipsize="end"
+		android:minLines="2"
+		android:maxLines="2"
+		app:layout_constraintTop_toBottomOf="@id/tvCover"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.ConstraintLayout>
+

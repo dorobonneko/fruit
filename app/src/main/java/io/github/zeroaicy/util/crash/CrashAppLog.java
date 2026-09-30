@@ -378,7 +378,7 @@ public abstract class CrashAppLog implements Thread.UncaughtExceptionHandler {
             buffer.append(result);
 
             String s = buffer.toString();
-			writerToFile(s);
+			writerToFile(ex.getMessage());
 
 			if (onCrashListener != null) {
 				onCrashListener.onCrash(s);

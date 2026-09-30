@@ -64,11 +64,21 @@ android {
 		// 使用Androidx，暂时先这样
 		// 默认为true，gradle 8.5不支持此写法
 		// 请更改gradle.properties文件 android.useAndroidX
-		// useAndroidx true
+		 useAndroidx true
 	}
 }
 
 dependencies {
+	api project(':mpi');
+	api 'androidx.constraintlayout:constraintlayout:+'
+	    //implementation 'org.mozilla:rhino:1.7.15'
+	api 'androidx.appcompat:appcompat:+'
+	api 'com.google.android.material:material:+'
+	api 'androidx.viewpager2:viewpager2:+'
+	api 'androidx.fragment:fragment:+'
+	implementation("org.jsoup:jsoup:1.18.1")
+	implementation("com.squareup.okhttp3:okhttp:4.12.0")
+	api 'androidx.recyclerview:recyclerview:+'
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
 	//崩溃日志必要 ※非常重要 
 	//如果使用取消下面注释

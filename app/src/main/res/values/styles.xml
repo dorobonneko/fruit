@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
 	</style>
 	<style name="AppTheme.Translucent" parent="android:Theme.DeviceDefault.NoActionBar">
     <!-- 设置窗口背景为完全透明 -->
